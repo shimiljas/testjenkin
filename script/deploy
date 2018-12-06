@@ -1,0 +1,10 @@
+#!/bin/sh
+ssh ubuntu@18.217.7.141<<EOF
+
+ mkdir test
+ cd ~/tes
+ git pull
+ npm install
+ pm2 start server.js
+ exit
+EOF
